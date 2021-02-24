@@ -1,0 +1,2 @@
+com/gradle/demo/FactorialTest.java
+ com.gradle.demo.FactorialTest

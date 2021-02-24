@@ -1,0 +1,2 @@
+com/gradle/demo/Factorial.java
+ com.gradle.demo.Factorial
