@@ -23,10 +23,14 @@ public class FourBallChallenge extends PApplet{
 
     @Override
     public void draw() {
-        ellipse(positionX * ball1.speedFactor, HEIGHT * ball1.heightFactor, ball1.diameter, ball1.diameter);
-        ellipse(positionX * ball2.speedFactor, HEIGHT * ball2.heightFactor, ball2.diameter, ball2.diameter);
-        ellipse(positionX * ball3.speedFactor, HEIGHT * ball3.heightFactor, ball3.diameter, ball3.diameter);
-        ellipse(positionX * ball4.speedFactor, HEIGHT * ball4.heightFactor, ball4.diameter, ball4.diameter);
+        drawBall(ball1);
+        drawBall(ball2);
+        drawBall(ball3);
+        drawBall(ball4);
         positionX += 1;
+    }
+
+    private void drawBall(Ball ball) {
+        ellipse(positionX * ball.speedFactor, HEIGHT * ball.heightFactor, ball.diameter, ball.diameter);
     }
 }
